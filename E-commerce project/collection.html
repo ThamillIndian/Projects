@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nostra</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.css" integrity="sha512-tx5+1LWHez1QiaXlAyDwzdBTfDjX07GMapQoFTS74wkcPMsI3So0KYmFe6EHZjI8+eSG0ljBlAQc3PQ5BTaZtQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+
+
+<body>
+    <nav class="navbar">
+        <h1>Nostra</h1>
+        <div class="navbar-links">
+            <p class="navbar-link"><a href="index.html">Home</a></p>
+            <p class="navbar-link"><a href="collection.html">Collections</a></p>
+            <p class="navbar-link"><a href="contact.html">contact</a></p>
+        </div>
+
+        <div class="navbar-menu-toggle" onclick="showNavbar()">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        
+    </nav>
+
+    <div class="side-navbar">
+        <p style="text-align: right;" onclick="closeNavbar()">
+            <i class="fa-solid fa-xmark"></i>
+        </p>
+        <div class="side-navbar-links">
+            <p class="side-navbar-link"><a href="">Home</a></p>
+            <p class="side-navbar-link"><a href="">Collections</a></p>
+            <p class="side-navbar-link"><a href="">Home</a></p>
+        </div>
+        
+    </div>
+
+    <!-- product -->
+    
+    <div class="product-sections">
+        <form class="product-search">
+            <input type="text" id="search" placeholder="Search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </form>
+
+        <div class="products" id="products">
+            <div class="product-box">
+                <img src="https://source.unsplash.com/random/200x200/?white shirt" alt="">
+                <p>White shirt</p>
+            </div>
+            <div class="product-box">
+                <img src="https://source.unsplash.com/random/200x200/?black shirt" alt="">
+                <p>Black Shirt</p>
+            </div>
+            <div class="product-box">
+                <img src="https://source.unsplash.com/random/200x200/?green shirt" alt="">
+                <p>Green shirt</p>
+            </div>
+            <div class="product-box">
+                <img src="https://source.unsplash.com/random/200x200/?yellow shirt" alt="">
+                <p>Yellow shirt</p>
+            </div>
+            <div class="product-box">
+                <img src="https://source.unsplash.com/random/200x200/?blue shirt" alt="">
+                <p>Blue shirt</p>
+            </div>
+            <div class="product-box">
+                <img src="https://source.unsplash.com/random/200x200/?red shirt" alt="">
+                <p>Red shirt</p>
+            </div>
+
+            <div class="product-box">
+                <img src="https://source.unsplash.com/random/200x200/?orange shirt" alt="">
+                <p>Orange shirt</p>
+            </div>
+
+
+        </div>
+            
+        
+
+    </div>
+   
+    <!-- footer -->
+
+    <div class="footer">
+        <div class="footer-container">
+            <div class="footer-box-1">
+                <h2 class="headingText">Nostra</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur </p>
+                <div class="footer-icon-container">
+                    <i class="fa-brands fa-instagram" style="color: #ffffff;"></i>
+                    <i class="fa-brands fa-twitter" style="color: #ffffff;"></i>
+                    <i class="fa-brands fa-facebook" style="color: #ffffff;"></i>
+                </div>
+            </div>    
+        </div>
+        <p>@ 2024nastra.com</p>
+    </div>
+
+    <script src="collection.js"> </script>
+</body>
+
+
+</html> 
