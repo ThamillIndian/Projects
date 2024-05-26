@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Assigner</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <input type="text" id="eventTitle" class="form-control" value="Flower Arrangement" />
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label for="eventDateTime">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16"><path d="M19 3H18V1H16V3H8V1H6V3H5C3.895 3 3 3.895 3 5V21C3 22.105 3.895 23 5 23H19C20.105 23 21 22.105 21 21V5C21 3.895 20.105 3 19 3zM19 21H5V9H19V21zM19 7H5V5H19V7z"/></svg>
+                            Date & Time
+                        </label>
+                        <input type="datetime-local" id="eventDateTime" class="form-control" value="2024-12-05T08:00" />
+                    </div>
+                    <div class="form-group">
+                        <label for="assignTo">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16"><path d="M12 12C14.21 12 16 10.21 16 8S14.21 4 12 4 8 5.79 8 8 9.79 12 12 12zM12 14C9.33 14 4 15.34 4 18V20H20V18C20 15.34 14.67 14 12 14z"/></svg>
+                            Assign to
+                        </label>
+                        <select id="assignTo" class="form-control">
+                            <option value="Jane Smith">Jane Smith</option>
+                            <option value="John Doe">John Doe</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="eventNote">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16"><path d="M3 3V21H21V7.83L15.17 2H3ZM14 9H10V7H14V9ZM14 12H10V10H14V12ZM10 15H14V13H10V15Z"/></svg>
+                            Note
+                        </label>
+                        <textarea id="eventNote" class="form-control">09382049832 www.flowervendor.com</textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="eventStatus">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16"><path d="M12 3C6.48 3 2 7.48 2 13C2 18.52 6.48 23 12 23C17.52 23 22 18.52 22 13C22 7.48 17.52 3 12 3zM10 17L5 12L6.41 10.59L10 14.17L17.59 6.58L19 8L10 17z"/></svg>
+                            Status
+                        </label>
+                        <select id="eventStatus" class="form-control">
+                            <option value="Pending">Pending</option>
+                            <option value="Complete">Complete</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="comments">Comments</label>
+                        <div id="comments" class="border p-2">
+                            <div class="comment" data-id="1">
+                                <img src="https://via.placeholder.com/40" alt="User">
+                                <div class="comment-text">Thanks for assigning me to the task. We'll get the details ironed out.</div>
+                                <input type="text" class="form-control comment-input">
+                                <button class="btn btn-sm btn-primary edit-comment">Edit</button>
+                                <button class="btn btn-sm btn-danger delete-comment">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6L5 6 21 6 21 8 19.688 8 18.878 19.875C18.773 21.14 17.644 22 16.367 22L7.631 22C6.355 22 5.227 21.14 5.122 19.875L4.312 8 3 8 3 6ZM7 19.986C7 20.544 7.477 21 8.049 21L15.949 21C16.523 21 17 20.544 17 19.986L17.812 8 6.188 8 7 19.986ZM10 10 10 18 11 18 11 10 10 10ZM13 10 13 18 14 18 14 10 13 10ZM8 4L9 3 15 3 16 4 20 4 20 5 4 5 4 4 8 4Z"/></svg>
+                                </button>                                
+                            </div>
+                        </div>
+                        <div class="input-group mt-2">
+                            <input type="text" id="newComment" class="form-control" placeholder="Write comment...">
+                            <div class="input-group-append">
+                                <button id="addComment" class="btn btn-primary">Add</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button id="saveEvent" class="btn btn-primary">Save</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./index.js"></script>
+</body>
+</html>
